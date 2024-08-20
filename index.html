@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass">
+            <div class="calculator">
+                <form>
+                    <div class="display">
+                        <input type="text" name="display" style="border: none;">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" class="clear-all" onclick="display.value = '' " style="border: none;">
+                        <input type="button" value="DE" class="delet" onclick="display.value = display.value.toString().slice(0,-1)" style="border: none;">
+                        <input type="button" value="." class="titik" onclick="display.value += '.' " class="hitam">
+                        <input type="button" value="/" class="bagi" onclick="display.value += '/' " style="border: none;">
+                    </div>
+                    <div>
+                        <input type="button" value="7" class="angka" onclick="display.value += '7' " >
+                        <input type="button" value="8" class="angka" onclick="display.value += '8' " >
+                        <input type="button" value="9" class="angka" onclick="display.value += '9' " >
+                        <input type="button" value="*" class="kali" onclick="display.value += '*' " style="border: none;">
+                    </div>
+                    <div>
+                        <input type="button" value="4" class="angka" onclick="display.value += '4' " >
+                        <input type="button" value="5" class="angka" onclick="display.value += '5' " >
+                        <input type="button" value="6" class="angka" onclick="display.value += '6' " >
+                        <input type="button" value="-" class="kurang" onclick="display.value += '-' " style="border: none;">
+                    </div>
+                    <div>
+                        <input type="button" value="1" class="angka" onclick="display.value += '1' ">
+                        <input type="button" value="2" class="angka" onclick="display.value += '2' ">
+                        <input type="button" value="3" class="angka" onclick="display.value += '3' ">
+                        <input type="button" value="+" class="tambah" onclick="display.value += '+' " style="border: none;">
+                    </div>
+                    <div>
+                        <input type="button" value="00" class="angka" onclick="display.value += '00' ">
+                        <input type="button" value="0" class="angka" onclick="display.value += '0' ">
+                        <input type="button" value="=" class="equal" onclick="display.value = eval(display.value)" style="border: none;">
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
